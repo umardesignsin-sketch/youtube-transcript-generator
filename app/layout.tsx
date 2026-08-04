@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import StructuredData from "@/components/StructuredData";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -65,7 +66,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Free YouTube Transcript Generator",
     description:
-      "Generate and download YouTube transcripts instantly for free.",
+      "Generate, copy, and download YouTube transcripts instantly for free.",
     url: "https://www.savefromnet.fun",
     siteName: "SaveFromNet",
     locale: "en_US",
@@ -76,7 +77,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Free YouTube Transcript Generator",
     description:
-      "Generate and download YouTube transcripts instantly for free.",
+      "Generate, copy, and download YouTube transcripts instantly for free.",
   },
 };
 
@@ -91,10 +92,10 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <StructuredData />
         {children}
+        <GoogleAnalytics gaId="G-DXPM9JWSFJ" />
       </body>
-
-      <GoogleAnalytics gaId="G-DXPM9JWSFJ" />
     </html>
   );
 }
