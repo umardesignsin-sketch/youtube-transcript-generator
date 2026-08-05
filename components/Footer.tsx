@@ -7,6 +7,7 @@ import { tools } from "@/lib/data/tools";
 import { comparisons } from "@/lib/data/compare";
 
 const downloaders = [
+  { href: "/youtube-video-downloader", label: "YouTube Video" },
   { href: "/pinterest-downloader", label: "Pinterest Downloader" },
   { href: "/pinterest-video-downloader", label: "Pinterest Video" },
   { href: "/pinterest-image-downloader", label: "Pinterest Image" },

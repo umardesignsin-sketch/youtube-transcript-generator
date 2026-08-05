@@ -6,13 +6,18 @@ import Navbar from "@/components/Navbar";
 import CTA from "@/components/CTA";
 
 export const metadata: Metadata = {
-  title: "Free Pinterest Downloaders — Video & Image",
+  title: "Free Downloaders — YouTube & Pinterest",
   description:
-    "Free tools to download Pinterest videos, Idea Pins and images. No sign-up, no watermark.",
+    "Free tools to download YouTube videos and Pinterest videos, Idea Pins and images. No sign-up, no watermark.",
   alternates: { canonical: "/downloaders" },
 };
 
 const downloaders = [
+  {
+    href: "/youtube-video-downloader",
+    title: "YouTube Video Downloader",
+    description: "Download any public YouTube video as an MP4 file, free.",
+  },
   {
     href: "/pinterest-downloader",
     title: "Pinterest Downloader",
@@ -38,12 +43,12 @@ export default function DownloadersHubPage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
           <h1 className="text-4xl font-bold text-slate-900 md:text-5xl">
-            Free Pinterest Downloaders
+            Free Downloaders
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-            Download video, Idea Pin and image content from Pinterest — free,
-            no sign-up, no watermark.
+            Download video, Idea Pin and image content from YouTube and
+            Pinterest — free, no sign-up, no watermark.
           </p>
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
