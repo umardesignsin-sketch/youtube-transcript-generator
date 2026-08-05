@@ -7,9 +7,9 @@ import { tools } from "@/lib/data/tools";
 import { comparisons } from "@/lib/data/compare";
 
 const downloaders = [
+  { href: "/pinterest-downloader", label: "Pinterest Downloader" },
   { href: "/pinterest-video-downloader", label: "Pinterest Video" },
-  { href: "/instagram-reel-downloader", label: "Instagram Reel & Audio" },
-  { href: "/instagram-story-downloader", label: "Instagram Story" },
+  { href: "/pinterest-image-downloader", label: "Pinterest Image" },
 ];
 
 export default function Footer() {

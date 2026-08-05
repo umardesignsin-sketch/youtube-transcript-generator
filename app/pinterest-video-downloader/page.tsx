@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import Navbar from "@/components/Navbar";
 import PSeoHero from "@/components/PSeoHero";
@@ -101,6 +102,20 @@ export default function PinterestDownloaderPage() {
         title="Pinterest Downloader FAQ"
         description="Common questions about downloading Pinterest videos and images."
       />
+
+      <section className="bg-slate-50 pb-24">
+        <div className="mx-auto max-w-4xl px-6 text-center text-sm text-slate-500">
+          Need Idea Pins too, or just images? See the full{" "}
+          <Link href="/pinterest-downloader" className="text-violet-600 underline">
+            Pinterest Downloader
+          </Link>{" "}
+          or the dedicated{" "}
+          <Link href="/pinterest-image-downloader" className="text-violet-600 underline">
+            Pinterest Image Downloader
+          </Link>
+          .
+        </div>
+      </section>
 
       <CTA
         heading="Ready to Download a Pinterest Video?"

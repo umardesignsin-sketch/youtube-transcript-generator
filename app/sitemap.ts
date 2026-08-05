@@ -62,19 +62,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/pinterest-downloader`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/pinterest-video-downloader`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/instagram-reel-downloader`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/instagram-story-downloader`,
+      url: `${baseUrl}/pinterest-image-downloader`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.85,

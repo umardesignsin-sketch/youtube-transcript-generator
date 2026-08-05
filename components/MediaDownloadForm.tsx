@@ -14,7 +14,7 @@ type ParsedResult = {
   baseName: string;
 };
 
-type ResultKind = "pinterest" | "instagram-post" | "instagram-story";
+type ResultKind = "pinterest";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
@@ -26,21 +26,6 @@ function parseResult(kind: ResultKind, data: any): ParsedResult {
         title: data.title,
         thumbnail: data.thumbnail,
         baseName: `pinterest-${data.pin_id}`,
-      };
-    case "instagram-post":
-      return {
-        items: [{ is_video: data.is_video, video: data.video, image: data.image }],
-        title: data.owner ? `@${data.owner}` : undefined,
-        subtitle: data.caption,
-        thumbnail: data.thumbnail,
-        baseName: `instagram-${data.shortcode}`,
-      };
-    case "instagram-story":
-      return {
-        items: data.items,
-        title: `@${data.username}`,
-        subtitle: `${data.items.length} active ${data.items.length === 1 ? "story" : "stories"}`,
-        baseName: `instagram-story-${data.username}`,
       };
   }
 }

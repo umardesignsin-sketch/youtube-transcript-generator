@@ -6,27 +6,27 @@ import Navbar from "@/components/Navbar";
 import CTA from "@/components/CTA";
 
 export const metadata: Metadata = {
-  title: "Free Video Downloaders — Pinterest & Instagram",
+  title: "Free Pinterest Downloaders — Video & Image",
   description:
-    "Free tools to download Pinterest videos and Instagram Reels, posts, audio and Stories. No sign-up, no watermark.",
+    "Free tools to download Pinterest videos, Idea Pins and images. No sign-up, no watermark.",
   alternates: { canonical: "/downloaders" },
 };
 
 const downloaders = [
   {
+    href: "/pinterest-downloader",
+    title: "Pinterest Downloader",
+    description: "Download any Pinterest pin — video, Idea Pin, or image — in one tool.",
+  },
+  {
     href: "/pinterest-video-downloader",
     title: "Pinterest Video Downloader",
-    description: "Download Pinterest videos and images in full quality, no watermark.",
+    description: "Download Pinterest videos in full quality, no watermark, plus MP3 audio.",
   },
   {
-    href: "/instagram-reel-downloader",
-    title: "Instagram Reel & Video Downloader",
-    description: "Download Instagram Reels, posts and audio (MP3) from any public account.",
-  },
-  {
-    href: "/instagram-story-downloader",
-    title: "Instagram Story Downloader",
-    description: "Save a public profile's active Instagram Stories before they expire.",
+    href: "/pinterest-image-downloader",
+    title: "Pinterest Image Downloader",
+    description: "Save Pinterest images in full resolution, no watermark.",
   },
 ];
 
@@ -38,12 +38,12 @@ export default function DownloadersHubPage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
           <h1 className="text-4xl font-bold text-slate-900 md:text-5xl">
-            Free Video Downloaders
+            Free Pinterest Downloaders
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-            Download video, photo and audio content from Pinterest and
-            Instagram — free, no sign-up, no watermark.
+            Download video, Idea Pin and image content from Pinterest — free,
+            no sign-up, no watermark.
           </p>
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
