@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import StructuredData from "@/components/StructuredData";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
+import MonetagSW from "@/components/MonetagSW";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -97,6 +98,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <CookieConsent gaId="G-DXPM9JWSFJ" />
+        <MonetagSW />
       </body>
     </html>
   );
