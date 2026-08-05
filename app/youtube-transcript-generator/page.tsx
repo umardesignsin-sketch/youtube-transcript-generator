@@ -6,6 +6,7 @@ import GeneratorHero from "@/components/GeneratorHero";
 import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import UseCases from "@/components/UseCases";
+import Citations from "@/components/Citations";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 
@@ -37,6 +38,8 @@ export default function YouTubeTranscriptGeneratorPage() {
       <HowItWorks />
 
       <UseCases />
+
+      <Citations />
 
       <FAQ />
 
