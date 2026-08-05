@@ -6,19 +6,25 @@ import { languages } from "@/lib/data/languages";
 import { tools } from "@/lib/data/tools";
 import { comparisons } from "@/lib/data/compare";
 
+const downloaders = [
+  { href: "/pinterest-video-downloader", label: "Pinterest Video" },
+  { href: "/instagram-reel-downloader", label: "Instagram Reel & Audio" },
+  { href: "/instagram-story-downloader", label: "Instagram Story" },
+];
+
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-zinc-950 py-16 text-zinc-400">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid gap-10 md:grid-cols-5">
-          <div className="md:col-span-1">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-6">
+          <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-3">
               <LogoMark />
               <span className="text-lg font-bold text-white">SFN Tools</span>
             </Link>
 
             <p className="mt-4 text-sm leading-6">
-              Free YouTube transcript generator. No sign-up, no software,
+              Free video &amp; transcript tools. No sign-up, no software,
               instant results.
             </p>
 
@@ -29,6 +35,12 @@ export default function Footer() {
               YouTube to Transcript →
             </Link>
           </div>
+
+          <FooterColumn
+            title="Downloaders"
+            links={downloaders}
+            moreHref="/downloaders"
+          />
 
           <FooterColumn
             title="Use Cases"

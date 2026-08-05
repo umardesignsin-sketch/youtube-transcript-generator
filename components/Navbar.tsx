@@ -7,8 +7,8 @@ import LogoMark from "./Logo";
 
 const links = [
   { href: "/youtube-to-transcript", label: "YouTube to Transcript" },
+  { href: "/downloaders", label: "Downloaders" },
   { href: "/youtube-transcript-for", label: "Use Cases" },
-  { href: "/tools", label: "Tools" },
   { href: "/blog", label: "Blog" },
 ];
 
@@ -26,7 +26,7 @@ export default function Navbar() {
               SFN Tools
             </h2>
             <p className="hidden text-xs text-zinc-400 sm:block">
-              YouTube Transcript Generator
+              Free Video & Transcript Tools
             </p>
           </div>
         </Link>

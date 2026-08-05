@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import UrlForm from "./UrlForm";
 import FadeIn from "./FadeIn";
 
@@ -5,10 +6,12 @@ export default function PSeoHero({
   badge,
   title,
   subtitle,
+  children,
 }: {
   badge: string;
   title: string;
   subtitle: string;
+  children?: ReactNode;
 }) {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-slate-100">
@@ -41,9 +44,7 @@ export default function PSeoHero({
           </FadeIn>
 
           <FadeIn delay={0.15}>
-            <div className="mt-12">
-              <UrlForm />
-            </div>
+            <div className="mt-12">{children ?? <UrlForm />}</div>
           </FadeIn>
         </div>
       </div>
