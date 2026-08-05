@@ -6,6 +6,7 @@ import {
   Briefcase,
   Globe,
 } from "lucide-react";
+import FadeIn from "./FadeIn";
 
 const useCases = [
   {
@@ -67,23 +68,22 @@ export default function UseCases() {
         </div>
 
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {useCases.map((item) => (
-            <div
-              key={item.title}
-              className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
-            >
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-100">
-                {item.icon}
+          {useCases.map((item, i) => (
+            <FadeIn key={item.title} delay={(i % 3) * 0.08}>
+              <div className="h-full rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-100">
+                  {item.icon}
+                </div>
+
+                <h3 className="text-2xl font-bold text-slate-900">
+                  {item.title}
+                </h3>
+
+                <p className="mt-4 leading-7 text-slate-600">
+                  {item.description}
+                </p>
               </div>
-
-              <h3 className="text-2xl font-bold text-slate-900">
-                {item.title}
-              </h3>
-
-              <p className="mt-4 leading-7 text-slate-600">
-                {item.description}
-              </p>
-            </div>
+            </FadeIn>
           ))}
         </div>
       </div>

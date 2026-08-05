@@ -1,7 +1,0 @@
-export default function BlogPostPage() {
-  return (
-    <main className="min-h-screen p-20">
-      <h1>Blog Post</h1>
-    </main>
-  );
-}

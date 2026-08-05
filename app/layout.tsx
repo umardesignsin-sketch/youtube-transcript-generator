@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import StructuredData from "@/components/StructuredData";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -94,6 +95,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <StructuredData />
         {children}
+        <Footer />
         <GoogleAnalytics gaId="G-DXPM9JWSFJ" />
       </body>
     </html>

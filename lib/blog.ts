@@ -3,27 +3,31 @@ import path from "path";
 
 const POSTS_PATH = path.join(process.cwd(), "data", "blog");
 
-export function getPostSlugs() {
+export type PostMeta = {
+  title: string;
+  description: string;
+  date: string;
+  slug: string;
+};
+
+export function getPostSlugs(): string[] {
   return fs
     .readdirSync(POSTS_PATH)
-    .filter((file) => file.endsWith(".mdx"));
+    .filter((file) => file.endsWith(".mdx"))
+    .map((file) => file.replace(/\.mdx$/, ""));
 }
 
-export function getPostBySlug(slug: string) {
-  const realSlug = slug.replace(/\.mdx$/, "");
-
-  const fullPath = path.join(POSTS_PATH, `${realSlug}.mdx`);
-
-  const source = fs.readFileSync(fullPath, "utf8");
-
-  return {
-    slug: realSlug,
-    source,
-  };
-}
-
-export function getAllPosts() {
+export async function getAllPostsMeta(): Promise<PostMeta[]> {
   const slugs = getPostSlugs();
 
-  return slugs.map((slug) => getPostBySlug(slug));
+  const posts = await Promise.all(
+    slugs.map(async (slug) => {
+      const mod = await import(`@/data/blog/${slug}.mdx`);
+      return { ...mod.meta, slug } as PostMeta;
+    })
+  );
+
+  return posts.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 }

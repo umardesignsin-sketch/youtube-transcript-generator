@@ -6,6 +6,7 @@ import {
   Search,
   ShieldCheck,
 } from "lucide-react";
+import FadeIn from "./FadeIn";
 
 const features = [
   {
@@ -67,23 +68,22 @@ export default function Features() {
         </div>
 
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature) => (
-            <div
-              key={feature.title}
-              className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
-            >
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-100">
-                {feature.icon}
+          {features.map((feature, i) => (
+            <FadeIn key={feature.title} delay={(i % 3) * 0.08}>
+              <div className="h-full rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-100">
+                  {feature.icon}
+                </div>
+
+                <h3 className="text-2xl font-bold text-slate-900">
+                  {feature.title}
+                </h3>
+
+                <p className="mt-4 leading-7 text-slate-600">
+                  {feature.description}
+                </p>
               </div>
-
-              <h3 className="text-2xl font-bold text-slate-900">
-                {feature.title}
-              </h3>
-
-              <p className="mt-4 leading-7 text-slate-600">
-                {feature.description}
-              </p>
-            </div>
+            </FadeIn>
           ))}
         </div>
       </div>

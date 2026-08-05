@@ -6,7 +6,7 @@ export default function StructuredData() {
         "@type": "Organization",
         "name": "SaveFromNet",
         "url": "https://www.savefromnet.fun",
-        "logo": "https://www.savefromnet.fun/logo.png"
+        "logo": "https://www.savefromnet.fun/apple-icon.png"
       },
       {
         "@type": "WebSite",
