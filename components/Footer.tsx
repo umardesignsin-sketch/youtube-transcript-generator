@@ -82,18 +82,24 @@ export default function Footer() {
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm md:flex-row">
           <p>&copy; {new Date().getFullYear()} SaveFromNet. All rights reserved.</p>
 
-          <div className="flex gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             <Link href="/" className="hover:text-white">
               Home
             </Link>
-            <Link href="/youtube-to-transcript" className="hover:text-white">
-              YouTube to Transcript
-            </Link>
-            <Link href="/youtube-transcript-generator" className="hover:text-white">
-              Transcript Generator
+            <Link href="/about" className="hover:text-white">
+              About
             </Link>
             <Link href="/blog" className="hover:text-white">
               Blog
+            </Link>
+            <Link href="/contact" className="hover:text-white">
+              Contact
+            </Link>
+            <Link href="/privacy-policy" className="hover:text-white">
+              Privacy Policy
+            </Link>
+            <Link href="/terms-of-service" className="hover:text-white">
+              Terms
             </Link>
           </div>
         </div>
