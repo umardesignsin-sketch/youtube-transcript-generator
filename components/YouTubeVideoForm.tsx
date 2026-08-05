@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Loader2, Link2, Download, Clock } from "lucide-react";
+import { Loader2, Link2, Download, Clock, Music } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
+type Quality = { label: string; format_id: string };
 
 type VideoInfo = {
   video_id: string;
@@ -13,7 +15,8 @@ type VideoInfo = {
   channel: string;
   duration: number;
   thumbnail: string;
-  resolution?: string;
+  qualities: Quality[];
+  has_audio_option: boolean;
 };
 
 function formatDuration(seconds: number) {
@@ -54,11 +57,12 @@ export default function YouTubeVideoForm() {
     setLoading(false);
   }
 
-  const downloadHref = info
-    ? `${API_URL}/youtube/download?url=${encodeURIComponent(url)}&filename=${encodeURIComponent(
-        `${info.title || "video"}.mp4`
-      )}`
-    : "";
+  function buildDownloadHref(formatId: string, ext: "mp4" | "mp3") {
+    const name = `${info?.title || "video"}.${ext}`;
+    return `${API_URL}/youtube/download?url=${encodeURIComponent(url)}&format_id=${encodeURIComponent(
+      formatId
+    )}&filename=${encodeURIComponent(name)}`;
+  }
 
   return (
     <>
@@ -120,20 +124,40 @@ export default function YouTubeVideoForm() {
                   <div className="mt-4 flex items-center gap-2 text-slate-600">
                     <Clock className="h-4 w-4" />
                     {formatDuration(info.duration)}
-                    {info.resolution && (
-                      <span className="ml-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium">
-                        {info.resolution}
-                      </span>
-                    )}
                   </div>
                 </div>
 
-                <a href={downloadHref} className="mt-6">
-                  <Button className="w-full bg-violet-600 text-white hover:bg-violet-700">
-                    <Download className="mr-2 h-4 w-4" />
-                    Download Video
-                  </Button>
-                </a>
+                <div className="mt-6">
+                  <p className="mb-3 text-sm font-medium text-slate-500">
+                    Choose a quality
+                  </p>
+
+                  <div className="flex flex-wrap gap-2">
+                    {info.qualities.map((q) => (
+                      <a key={q.format_id} href={buildDownloadHref(q.format_id, "mp4")}>
+                        <Button
+                          variant="outline"
+                          className="border-slate-200 text-slate-700 hover:border-violet-300 hover:bg-violet-50 hover:text-violet-700"
+                        >
+                          <Download className="mr-2 h-4 w-4" />
+                          {q.label}
+                        </Button>
+                      </a>
+                    ))}
+
+                    {info.has_audio_option && (
+                      <a href={buildDownloadHref("audio", "mp3")}>
+                        <Button
+                          variant="outline"
+                          className="border-slate-200 text-slate-700 hover:border-violet-300 hover:bg-violet-50 hover:text-violet-700"
+                        >
+                          <Music className="mr-2 h-4 w-4" />
+                          Audio (MP3)
+                        </Button>
+                      </a>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </div>

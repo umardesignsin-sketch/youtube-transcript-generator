@@ -11,13 +11,13 @@ import CTA from "@/components/CTA";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "YouTube Video Downloader — Free, No Sign-Up",
+  title: "YouTube Video Downloader — Free, MP4, Multiple Qualities",
   description:
-    "Download any public YouTube video as an MP4 file for free. Paste a link and save it directly — no sign-up, no software.",
+    "Download any public YouTube video as MP4 in multiple qualities (up to 1080p, when available), or as MP3 audio — free, no sign-up.",
   alternates: { canonical: "/youtube-video-downloader" },
   openGraph: {
-    title: "YouTube Video Downloader — Free, No Sign-Up",
-    description: "Paste a YouTube link and download the video as MP4.",
+    title: "YouTube Video Downloader — Free, Multiple Qualities",
+    description: "Paste a YouTube link and download the video as MP4 or MP3.",
     url: "https://www.savefromnet.fun/youtube-video-downloader",
     type: "website",
   },
@@ -26,11 +26,15 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How do I download a YouTube video?",
-    a: "Paste the video's URL above and click Get Video. You'll see a preview with the title, channel and duration — click Download Video to save the MP4.",
+    a: "Paste the video's URL above and click Get Video. You'll see a preview with the title, channel and duration, plus a row of quality buttons — click the one you want to download it.",
   },
   {
-    q: "What quality do I get?",
-    a: "This tool uses YouTube's standard combined video+audio format, which is typically 360p. YouTube's higher resolutions are served as separate video-only and audio-only streams behind additional anti-bot checks, so we intentionally stick to the reliable format rather than a higher quality that might silently fail.",
+    q: "What quality options are available?",
+    a: "Whatever resolutions the source video actually has — typically up to 1080p, sometimes less for older or lower-quality uploads. Only qualities that genuinely exist for that specific video are shown.",
+  },
+  {
+    q: "Can I download just the audio?",
+    a: "Yes — an Audio (MP3) button appears alongside the video quality options when available.",
   },
   {
     q: "Is there a video length limit?",
@@ -45,8 +49,8 @@ const faqs = [
     a: "Yes, completely free with no sign-up required.",
   },
   {
-    q: "Can I also get just the audio, or a transcript instead?",
-    a: "Yes — see our YouTube to Transcript tool for text, or download the video here and use a converter for audio-only.",
+    q: "Can I get a transcript instead of the video?",
+    a: "Yes — see our YouTube to Transcript tool for clean, downloadable text instead.",
   },
 ];
 
@@ -88,7 +92,7 @@ export default function YouTubeVideoDownloaderPage() {
         list={[
           "Copy the video's URL from the address bar or the Share button.",
           "Paste it above and click Get Video.",
-          "Review the preview, then click Download Video to save the MP4.",
+          "Pick a quality (or Audio for MP3) to download it.",
         ]}
       />
 
