@@ -14,6 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: now, changeFrequency: "daily", priority: 1 },
     {
+      url: `${baseUrl}/youtube-to-transcript`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/youtube-transcript-generator`,
       lastModified: now,
       changeFrequency: "daily",

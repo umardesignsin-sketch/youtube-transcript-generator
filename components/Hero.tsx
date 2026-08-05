@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Zap, Globe2, FileDown, Bot, Lock } from "lucide-react";
 
 import UrlForm from "./UrlForm";
@@ -42,10 +43,17 @@ export default function Hero() {
 
           <FadeIn delay={0.1}>
             <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-slate-600">
-              Generate, copy, search and download transcripts from any public
-              YouTube video in seconds. Perfect for students, creators,
-              researchers, marketers and developers who need accurate video
-              transcripts for SEO, AI, learning and content creation.
+              Convert{" "}
+              <Link
+                href="/youtube-to-transcript"
+                className="font-medium text-violet-600 underline decoration-violet-300 underline-offset-2 hover:text-violet-700"
+              >
+                YouTube to transcript
+              </Link>{" "}
+              in seconds — copy, search and download the text of any public
+              YouTube video. Perfect for students, creators, researchers,
+              marketers and developers who need accurate video transcripts
+              for SEO, AI, learning and content creation.
             </p>
           </FadeIn>
 

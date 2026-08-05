@@ -21,6 +21,13 @@ export default function Footer() {
               Free YouTube transcript generator. No sign-up, no software,
               instant results.
             </p>
+
+            <Link
+              href="/youtube-to-transcript"
+              className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-violet-400 hover:text-violet-300"
+            >
+              YouTube to Transcript →
+            </Link>
           </div>
 
           <FooterColumn
@@ -66,6 +73,9 @@ export default function Footer() {
           <div className="flex gap-6">
             <Link href="/" className="hover:text-white">
               Home
+            </Link>
+            <Link href="/youtube-to-transcript" className="hover:text-white">
+              YouTube to Transcript
             </Link>
             <Link href="/youtube-transcript-generator" className="hover:text-white">
               Transcript Generator

@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import LogoMark from "./Logo";
 
 const links = [
+  { href: "/youtube-to-transcript", label: "YouTube to Transcript" },
   { href: "/youtube-transcript-for", label: "Use Cases" },
   { href: "/tools", label: "Tools" },
   { href: "/blog", label: "Blog" },
