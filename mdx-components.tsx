@@ -20,9 +20,17 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ol: (props) => (
       <ol className="mt-5 list-decimal space-y-2 pl-6 text-lg leading-8 text-slate-600" {...props} />
     ),
-    a: (props) => (
-      <a className="text-violet-600 underline hover:text-violet-700" {...props} />
-    ),
+    a: ({ href, ...props }) => {
+      const isExternal = typeof href === "string" && /^https?:\/\//.test(href);
+      return (
+        <a
+          href={href}
+          className="text-violet-600 underline hover:text-violet-700"
+          {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          {...props}
+        />
+      );
+    },
     strong: (props) => <strong className="font-semibold text-slate-900" {...props} />,
     blockquote: (props) => (
       <blockquote

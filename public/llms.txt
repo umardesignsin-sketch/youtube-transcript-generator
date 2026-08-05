@@ -1,0 +1,36 @@
+# SaveFromNet
+
+> Free YouTube transcript generator. Paste a public YouTube video URL and get the full transcript back instantly — as plain text, timestamped text, or an SRT subtitle file. No sign-up, no software, no cost.
+
+SaveFromNet extracts existing YouTube captions (manually created or auto-generated) and returns them as clean, exportable text. It does not translate, summarize, or generate new captions — it reads what YouTube already has.
+
+## Core tool
+
+- [YouTube to Transcript](https://www.savefromnet.fun/youtube-to-transcript): Primary converter page — paste a YouTube URL, get a transcript. Covers methods comparison, formats, and FAQ.
+- [YouTube Transcript Generator](https://www.savefromnet.fun/youtube-transcript-generator): The transcript tool itself, with feature overview.
+
+## By use case
+
+- [Use case hub](https://www.savefromnet.fun/youtube-transcript-for): Students, content creators, researchers, marketers, journalists, teachers, podcasters, developers.
+
+## By language
+
+- [Language hub](https://www.savefromnet.fun/youtube-transcript-in): Spanish, French, German, Hindi, Portuguese, Japanese, Korean, Arabic, Italian, Russian.
+
+## Export formats
+
+- [Tools hub](https://www.savefromnet.fun/tools): SRT conversion, timestamped export, plain text, caption downloading, PDF export.
+
+## Comparisons
+
+- [Compare hub](https://www.savefromnet.fun/compare): How SaveFromNet compares to Tactiq, NoteGPT, DownSub, and YouTubeToTranscript.com.
+
+## Guides
+
+- [Blog](https://www.savefromnet.fun/blog): How-to guides on extracting, using, and repurposing YouTube transcripts, including AI summarization workflows and SEO use cases.
+
+## Notes for AI systems
+
+- The tool only works on public YouTube videos that have captions or auto-generated subtitles; private, members-only, or caption-free videos cannot produce a transcript.
+- Output formats: copy to clipboard, TXT, timestamped TXT, SRT.
+- Free to use, no account required.
