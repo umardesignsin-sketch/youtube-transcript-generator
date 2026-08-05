@@ -74,9 +74,11 @@ export default function PrivacyPolicyPage() {
             <div>
               <h2 className="text-2xl font-bold text-slate-900">Cookies</h2>
               <p className="mt-3">
-                Google Analytics may set cookies to distinguish unique
-                visitors. You can disable cookies in your browser settings at
-                any time; the tools will still work without them.
+                Analytics cookies are only set if you accept them via the
+                cookie banner shown on your first visit — declining means
+                Google Analytics never loads. You can also disable cookies
+                in your browser settings at any time; the tools will still
+                work without them.
               </p>
             </div>
 

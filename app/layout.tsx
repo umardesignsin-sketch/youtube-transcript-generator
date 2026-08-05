@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import StructuredData from "@/components/StructuredData";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -96,7 +96,7 @@ export default function RootLayout({
         <StructuredData />
         {children}
         <Footer />
-        <GoogleAnalytics gaId="G-DXPM9JWSFJ" />
+        <CookieConsent gaId="G-DXPM9JWSFJ" />
       </body>
     </html>
   );
