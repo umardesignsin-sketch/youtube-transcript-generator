@@ -87,11 +87,13 @@ export default function TranscriptCard({
 
         <div className="grid md:grid-cols-[340px_1fr]">
 
-          <img
-            src={data.thumbnail}
-            alt={data.title}
-            className="h-full w-full object-cover"
-          />
+          <div className="aspect-video w-full self-start overflow-hidden bg-slate-100">
+            <img
+              src={data.thumbnail}
+              alt={data.title}
+              className="h-full w-full object-cover"
+            />
+          </div>
 
           <div className="flex flex-col justify-between p-8">
 

@@ -105,11 +105,13 @@ export default function YouTubeVideoForm() {
         <div className="mx-auto mt-14 max-w-3xl">
           <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-lg">
             <div className="grid md:grid-cols-[280px_1fr]">
-              <img
-                src={info.thumbnail}
-                alt={info.title}
-                className="h-full w-full object-cover"
-              />
+              <div className="aspect-video w-full self-start overflow-hidden bg-slate-100">
+                <img
+                  src={info.thumbnail}
+                  alt={info.title}
+                  className="h-full w-full object-cover"
+                />
+              </div>
 
               <div className="flex flex-col justify-between p-8">
                 <div>
