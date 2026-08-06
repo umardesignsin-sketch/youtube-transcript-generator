@@ -24,7 +24,7 @@ export default function GeneratorHero() {
             <h1 className="mt-8 text-5xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-6xl">
               Free YouTube
               <br />
-              <span className="bg-gradient-to-r from-green-600 via-indigo-600 to-sky-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-green-600 via-emerald-600 to-lime-500 bg-clip-text text-transparent">
                 Transcript Generator
               </span>
             </h1>

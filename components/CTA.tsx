@@ -12,7 +12,7 @@ export default function CTA({
   href?: string;
 }) {
   return (
-    <section className="bg-gradient-to-r from-green-600 via-indigo-600 to-sky-500 py-24">
+    <section className="bg-gradient-to-r from-green-600 via-emerald-600 to-lime-500 py-24">
       <div className="mx-auto max-w-4xl px-6 text-center">
         <h2 className="text-4xl font-extrabold text-white md:text-5xl">
           {heading}
