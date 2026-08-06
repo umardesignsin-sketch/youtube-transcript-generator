@@ -38,6 +38,9 @@ export const metadata: Metadata = {
     "video transcript generator",
     "youtube captions",
     "youtube subtitles",
+    "save from net",
+    "savefromnet",
+    "save from net downloader",
   ],
 
   authors: [

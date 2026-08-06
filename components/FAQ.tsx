@@ -4,6 +4,10 @@ export type FaqItem = { q: string; a: string };
 
 const defaultFaqs: FaqItem[] = [
   {
+    q: "What does \"Save From Net\" mean?",
+    a: "It's the idea behind the name: save the thing you want — a transcript, a video, an image — from the web, in one step. SaveFromNet (savefromnet.fun) is an independent site and isn't affiliated with any other similarly-named downloader site.",
+  },
+  {
     q: "Is this YouTube Transcript Generator free?",
     a: "Yes. Our YouTube Transcript Generator is completely free to use. There are no subscriptions, hidden fees or account requirements.",
   },

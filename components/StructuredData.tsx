@@ -5,6 +5,7 @@ export default function StructuredData() {
       {
         "@type": "Organization",
         "name": "SaveFromNet",
+        "alternateName": ["Save From Net", "Save from Net"],
         "url": "https://www.savefromnet.fun",
         "logo": "https://www.savefromnet.fun/apple-icon.png",
         "contactPoint": {
@@ -16,6 +17,7 @@ export default function StructuredData() {
       {
         "@type": "WebSite",
         "name": "SaveFromNet",
+        "alternateName": "Save From Net",
         "url": "https://www.savefromnet.fun",
         "potentialAction": {
           "@type": "SearchAction",

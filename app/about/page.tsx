@@ -19,6 +19,10 @@ const faqs = [
     a: "SaveFromNet is a free website offering a set of single-purpose web tools: a YouTube transcript generator, and Pinterest video/image downloaders. Paste a link, get the result — no account required.",
   },
   {
+    q: "Is SaveFromNet the same as SaveFrom.net?",
+    a: "No. SaveFromNet (savefromnet.fun) is an independent site with its own tools and isn't affiliated with, or a copy of, any other similarly-named downloader site.",
+  },
+  {
     q: "Is SaveFromNet free?",
     a: "Yes, every tool on the site is free with no sign-up, no subscription, and no usage limits.",
   },
@@ -66,9 +70,10 @@ export default function AboutPage() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
-            SaveFromNet is a small collection of free, single-purpose web
-            tools. No accounts, no subscriptions, no dashboards — paste a
-            link, get what you came for.
+            SaveFromNet — save from net, save what you need — is a small
+            collection of free, single-purpose web tools. No accounts, no
+            subscriptions, no dashboards — paste a link, get what you came
+            for.
           </p>
 
           <div className="mt-10 space-y-5 text-lg leading-8 text-slate-600">
