@@ -19,6 +19,16 @@ const downloaders = [
     description: "Download any public YouTube video as an MP4 file, free.",
   },
   {
+    href: "/youtube-to-mp4",
+    title: "YouTube to MP4",
+    description: "Convert any public YouTube video to MP4 in multiple qualities, free.",
+  },
+  {
+    href: "/youtube-audio-downloader",
+    title: "YouTube Audio Downloader",
+    description: "Download just the audio from a YouTube video as MP3, free.",
+  },
+  {
     href: "/pinterest-downloader",
     title: "Pinterest Downloader",
     description: "Download any Pinterest pin — video, Idea Pin, or image — in one tool.",

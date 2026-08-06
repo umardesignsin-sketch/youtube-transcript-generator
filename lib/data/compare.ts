@@ -124,6 +124,34 @@ export const comparisons: ComparePage[] = [
       },
     ],
   },
+  {
+    slug: "y2mate",
+    competitor: "Y2mate",
+    metaTitle: "SaveFromNet vs Y2mate — Free YouTube Downloader Alternative",
+    metaDescription:
+      "Comparing SaveFromNet and Y2mate for downloading YouTube videos and audio. See the difference in ads, redirects and quality options.",
+    heading: "SaveFromNet vs Y2mate",
+    intro: [
+      "Y2mate is one of the older, better-known names for downloading YouTube videos and audio, but it's also known for heavy ad load and redirect pop-ups on many mirror domains. SaveFromNet's YouTube Video Downloader is a single, ad-light page: paste a link, pick a quality, download.",
+      "If you've landed on a Y2mate mirror and hit unexpected redirects or download buttons that aren't really download buttons, a simpler tool is usually the less frustrating path.",
+    ],
+    points: [
+      { label: "Interface", us: "Single page, no redirects", them: "Ad-heavy, redirect pop-ups on many mirrors" },
+      { label: "Quality options", us: "Only qualities that actually exist for the video", them: "Lists qualities that sometimes fail to download" },
+      { label: "Account required", us: "No sign-up needed", them: "No sign-up needed" },
+      { label: "Audio download", us: "Dedicated MP3 button", them: "Separate audio conversion step" },
+    ],
+    faqs: [
+      {
+        q: "Is SaveFromNet like Y2mate?",
+        a: "Both let you download YouTube videos for free without an account, but SaveFromNet is built as a single ad-light page with direct quality buttons instead of redirect-heavy download flows.",
+      },
+      {
+        q: "Can I download YouTube audio only, like on Y2mate?",
+        a: "Yes — the YouTube Video Downloader includes a dedicated Audio (MP3) option alongside video qualities.",
+      },
+    ],
+  },
 ];
 
 export function getComparison(slug: string) {
