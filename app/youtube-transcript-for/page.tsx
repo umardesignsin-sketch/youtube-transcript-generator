@@ -46,7 +46,7 @@ export default function UseCaseHubPage() {
                   </p>
                 </div>
 
-                <span className="mt-6 inline-flex items-center gap-2 font-semibold text-violet-600">
+                <span className="mt-6 inline-flex items-center gap-2 font-semibold text-green-600">
                   Read guide
                   <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
                 </span>

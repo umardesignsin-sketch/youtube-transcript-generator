@@ -46,7 +46,7 @@ export default function YouTubeTranscriptGeneratorPage() {
       <section className="bg-white pb-20">
         <div className="mx-auto max-w-4xl px-6 text-center text-sm text-slate-500">
           Want the full breakdown of how to go from a{" "}
-          <Link href="/youtube-to-transcript" className="text-violet-600 underline">
+          <Link href="/youtube-to-transcript" className="text-green-600 underline">
             YouTube video to transcript
           </Link>
           , including format options and FAQs? See our complete guide.

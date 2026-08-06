@@ -44,7 +44,7 @@ export default function Navbar() {
 
           <Link
             href="/youtube-transcript-generator"
-            className="rounded-xl bg-violet-600 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-violet-600/20 transition hover:bg-violet-500"
+            className="rounded-xl bg-green-600 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-green-600/20 transition hover:bg-green-500"
           >
             Free
           </Link>
@@ -76,7 +76,7 @@ export default function Navbar() {
             <Link
               href="/youtube-transcript-generator"
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-xl bg-violet-600 px-4 py-3 text-center text-sm font-semibold text-white hover:bg-violet-500"
+              className="mt-2 rounded-xl bg-green-600 px-4 py-3 text-center text-sm font-semibold text-white hover:bg-green-500"
             >
               Generate a Transcript — Free
             </Link>

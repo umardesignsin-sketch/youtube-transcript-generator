@@ -145,7 +145,7 @@ export default function TranscriptCard({
 
             <Button
               onClick={copyTranscript}
-              className="bg-violet-600 text-white hover:bg-violet-700"
+              className="bg-green-600 text-white hover:bg-green-700"
             >
               <Copy className="mr-2 h-4 w-4" />
               Copy

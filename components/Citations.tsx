@@ -8,7 +8,7 @@ export default function Citations() {
             href="https://support.google.com/youtube/answer/6373554"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-violet-600 underline"
+            className="text-green-600 underline"
           >
             YouTube&apos;s own automatic captioning system
           </a>
@@ -18,7 +18,7 @@ export default function Citations() {
             href="https://www.w3.org/WAI/media/av/captions/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-violet-600 underline"
+            className="text-green-600 underline"
           >
             W3C Web Accessibility Initiative&apos;s guidance on captions
           </a>{" "}

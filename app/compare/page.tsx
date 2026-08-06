@@ -40,7 +40,7 @@ export default function CompareHubPage() {
                   vs {c.competitor}
                 </h2>
 
-                <ArrowRight className="h-5 w-5 text-violet-600 transition group-hover:translate-x-1" />
+                <ArrowRight className="h-5 w-5 text-green-600 transition group-hover:translate-x-1" />
               </Link>
             ))}
           </div>

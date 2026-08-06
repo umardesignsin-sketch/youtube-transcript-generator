@@ -103,11 +103,11 @@ export default function YouTubeAudioDownloaderPage() {
       <section className="bg-slate-50 pb-24">
         <div className="mx-auto max-w-4xl px-6 text-center text-sm text-slate-500">
           Need the video file instead? Try the{" "}
-          <Link href="/youtube-video-downloader" className="text-violet-600 underline">
+          <Link href="/youtube-video-downloader" className="text-green-600 underline">
             YouTube Video Downloader
           </Link>
           , or get a{" "}
-          <Link href="/youtube-to-transcript" className="text-violet-600 underline">
+          <Link href="/youtube-to-transcript" className="text-green-600 underline">
             YouTube Transcript
           </Link>{" "}
           for the text instead.

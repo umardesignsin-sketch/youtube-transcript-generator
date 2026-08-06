@@ -120,11 +120,11 @@ export default function PinterestDownloaderPage() {
       <section className="bg-slate-50 pb-24">
         <div className="mx-auto max-w-4xl px-6 text-center text-sm text-slate-500">
           Only need video pins? Try the dedicated{" "}
-          <Link href="/pinterest-video-downloader" className="text-violet-600 underline">
+          <Link href="/pinterest-video-downloader" className="text-green-600 underline">
             Pinterest Video Downloader
           </Link>
           , or the{" "}
-          <Link href="/pinterest-image-downloader" className="text-violet-600 underline">
+          <Link href="/pinterest-image-downloader" className="text-green-600 underline">
             Pinterest Image Downloader
           </Link>{" "}
           for photo pins only.

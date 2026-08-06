@@ -4,7 +4,7 @@ import FadeIn from "./FadeIn";
 
 const steps = [
   {
-    icon: <Link2 className="h-10 w-10 text-violet-600" />,
+    icon: <Link2 className="h-10 w-10 text-green-600" />,
     title: "Paste Your YouTube Video URL",
     description:
       "Copy the URL of any public YouTube video and paste it into our free YouTube Transcript Generator.",
@@ -63,7 +63,7 @@ export default function HowItWorks() {
           {steps.map((step, index) => (
             <FadeIn key={step.title} delay={index * 0.1}>
               <div className="relative h-full rounded-3xl border border-slate-200 bg-slate-50 p-10 text-center">
-                <div className="absolute -top-5 left-1/2 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-violet-600 text-white font-bold">
+                <div className="absolute -top-5 left-1/2 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-green-600 text-white font-bold">
                   {index + 1}
                 </div>
 

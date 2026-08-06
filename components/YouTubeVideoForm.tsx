@@ -74,14 +74,14 @@ export default function YouTubeVideoForm() {
               value={url}
               onChange={(e) => setUrl(e.target.value)}
               placeholder="Paste a YouTube video URL..."
-              className="h-16 rounded-2xl border-0 bg-slate-100 pl-14 text-slate-900 placeholder:text-slate-400 focus-visible:ring-2 focus-visible:ring-violet-500"
+              className="h-16 rounded-2xl border-0 bg-slate-100 pl-14 text-slate-900 placeholder:text-slate-400 focus-visible:ring-2 focus-visible:ring-green-500"
             />
           </div>
 
           <Button
             onClick={handleSubmit}
             disabled={loading || !url}
-            className="h-16 rounded-2xl bg-violet-600 px-10 text-white transition hover:bg-violet-700"
+            className="h-16 rounded-2xl bg-green-600 px-10 text-white transition hover:bg-green-700"
           >
             {loading ? (
               <>
@@ -139,7 +139,7 @@ export default function YouTubeVideoForm() {
                       <a key={q.format_id} href={buildDownloadHref(q.format_id, "mp4")}>
                         <Button
                           variant="outline"
-                          className="border-slate-200 text-slate-700 hover:border-violet-300 hover:bg-violet-50 hover:text-violet-700"
+                          className="border-slate-200 text-slate-700 hover:border-green-300 hover:bg-green-50 hover:text-green-700"
                         >
                           <Download className="mr-2 h-4 w-4" />
                           {q.label}
@@ -151,7 +151,7 @@ export default function YouTubeVideoForm() {
                       <a href={buildDownloadHref("audio", "mp3")}>
                         <Button
                           variant="outline"
-                          className="border-slate-200 text-slate-700 hover:border-violet-300 hover:bg-violet-50 hover:text-violet-700"
+                          className="border-slate-200 text-slate-700 hover:border-green-300 hover:bg-green-50 hover:text-green-700"
                         >
                           <Music className="mr-2 h-4 w-4" />
                           Audio (MP3)

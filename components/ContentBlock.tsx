@@ -36,7 +36,7 @@ export default function ContentBlock({
                   key={i}
                   className="flex gap-3 text-slate-600 leading-7"
                 >
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-600" />
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-green-600" />
                   {item}
                 </li>
               ))}

@@ -7,15 +7,15 @@ export default function GeneratorHero() {
       <div className="absolute inset-0 -z-10 grid-texture" />
 
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-violet-500/15 blur-[140px]" />
-        <div className="absolute right-0 top-20 h-[450px] w-[450px] rounded-full bg-cyan-400/15 blur-[120px]" />
-        <div className="absolute left-0 bottom-0 h-[450px] w-[450px] rounded-full bg-blue-400/10 blur-[120px]" />
+        <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-green-500/15 blur-[140px]" />
+        <div className="absolute right-0 top-20 h-[450px] w-[450px] rounded-full bg-emerald-400/15 blur-[120px]" />
+        <div className="absolute left-0 bottom-0 h-[450px] w-[450px] rounded-full bg-lime-400/10 blur-[120px]" />
       </div>
 
       <div className="mx-auto max-w-7xl px-6 py-20">
         <div className="mx-auto max-w-4xl text-center">
           <FadeIn>
-            <span className="inline-flex items-center rounded-full border border-violet-200 bg-violet-50 px-5 py-2 text-sm font-medium text-violet-700">
+            <span className="inline-flex items-center rounded-full border border-green-200 bg-green-50 px-5 py-2 text-sm font-medium text-green-700">
               🚀 Free Forever • No Sign-Up • Instant Results
             </span>
           </FadeIn>
@@ -24,7 +24,7 @@ export default function GeneratorHero() {
             <h1 className="mt-8 text-5xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-6xl">
               Free YouTube
               <br />
-              <span className="bg-gradient-to-r from-violet-600 via-indigo-600 to-sky-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-green-600 via-indigo-600 to-sky-500 bg-clip-text text-transparent">
                 Transcript Generator
               </span>
             </h1>

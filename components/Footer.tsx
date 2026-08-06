@@ -33,7 +33,7 @@ export default function Footer() {
 
             <Link
               href="/youtube-to-transcript"
-              className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-violet-400 hover:text-violet-300"
+              className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-green-400 hover:text-green-300"
             >
               YouTube to Transcript →
             </Link>
@@ -135,7 +135,7 @@ function FooterColumn({
           </li>
         ))}
         <li>
-          <Link href={moreHref} className="font-medium text-violet-400 hover:text-violet-300">
+          <Link href={moreHref} className="font-medium text-green-400 hover:text-green-300">
             View all →
           </Link>
         </li>

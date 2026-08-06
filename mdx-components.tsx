@@ -25,7 +25,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       return (
         <a
           href={href}
-          className="text-violet-600 underline hover:text-violet-700"
+          className="text-green-600 underline hover:text-green-700"
           {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
           {...props}
         />
@@ -34,12 +34,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     strong: (props) => <strong className="font-semibold text-slate-900" {...props} />,
     blockquote: (props) => (
       <blockquote
-        className="mt-6 border-l-4 border-violet-300 pl-6 text-lg italic text-slate-500"
+        className="mt-6 border-l-4 border-green-300 pl-6 text-lg italic text-slate-500"
         {...props}
       />
     ),
     code: (props) => (
-      <code className="rounded bg-slate-100 px-1.5 py-0.5 text-base text-violet-700" {...props} />
+      <code className="rounded bg-slate-100 px-1.5 py-0.5 text-base text-green-700" {...props} />
     ),
     ...components,
   };

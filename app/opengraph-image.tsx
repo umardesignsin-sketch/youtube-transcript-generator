@@ -25,15 +25,19 @@ export default function OpengraphImage() {
             width: 96,
             height: 96,
             borderRadius: 22,
-            background: "linear-gradient(135deg, #7c3aed 0%, #4f46e5 55%, #0ea5e9 100%)",
+            background: "linear-gradient(135deg, #22c55e 0%, #15803d 100%)",
             marginBottom: 40,
           }}
         >
-          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-            <div style={{ width: 44, height: 8, borderRadius: 6, background: "#fff" }} />
-            <div style={{ width: 32, height: 8, borderRadius: 6, background: "#fff" }} />
-            <div style={{ width: 38, height: 8, borderRadius: 6, background: "#fff" }} />
-          </div>
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 4v13M19 11l-7 7-7-7"
+              stroke="#fff"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </div>
 
         <div

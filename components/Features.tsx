@@ -10,7 +10,7 @@ import FadeIn from "./FadeIn";
 
 const features = [
   {
-    icon: <Zap className="h-8 w-8 text-violet-600" />,
+    icon: <Zap className="h-8 w-8 text-green-600" />,
     title: "Instant YouTube Transcript Generation",
     description:
       "Generate accurate transcripts from any public YouTube video in seconds with no waiting or complicated setup.",
@@ -52,7 +52,7 @@ export default function Features() {
     <section className="py-24 bg-slate-50">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
-          <span className="rounded-full bg-violet-100 px-4 py-2 text-sm font-medium text-violet-700">
+          <span className="rounded-full bg-green-100 px-4 py-2 text-sm font-medium text-green-700">
             Features
           </span>
 

@@ -14,14 +14,18 @@ export default function Icon() {
           alignItems: "center",
           justifyContent: "center",
           borderRadius: 7,
-          background: "linear-gradient(135deg, #7c3aed 0%, #4f46e5 55%, #0ea5e9 100%)",
+          background: "linear-gradient(135deg, #22c55e 0%, #15803d 100%)",
         }}
       >
-        <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-          <div style={{ width: 16, height: 3, borderRadius: 2, background: "#fff" }} />
-          <div style={{ width: 12, height: 3, borderRadius: 2, background: "#fff" }} />
-          <div style={{ width: 14, height: 3, borderRadius: 2, background: "#fff" }} />
-        </div>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M12 4v13M19 11l-7 7-7-7"
+            stroke="#fff"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
       </div>
     ),
     { ...size }

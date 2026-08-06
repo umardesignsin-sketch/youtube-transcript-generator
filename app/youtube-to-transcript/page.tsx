@@ -131,19 +131,19 @@ export default function YouTubeToTranscriptPage() {
       <section className="bg-slate-50 pb-24">
         <div className="mx-auto max-w-4xl px-6 text-center text-sm text-slate-500">
           Looking for something more specific? See transcripts{" "}
-          <Link href="/youtube-transcript-for" className="text-violet-600 underline">
+          <Link href="/youtube-transcript-for" className="text-green-600 underline">
             by use case
           </Link>
           , transcripts{" "}
-          <Link href="/youtube-transcript-in" className="text-violet-600 underline">
+          <Link href="/youtube-transcript-in" className="text-green-600 underline">
             by language
           </Link>
           , or export formats like{" "}
-          <Link href="/tools/youtube-to-srt" className="text-violet-600 underline">
+          <Link href="/tools/youtube-to-srt" className="text-green-600 underline">
             SRT
           </Link>{" "}
           and{" "}
-          <Link href="/tools/youtube-transcript-to-pdf" className="text-violet-600 underline">
+          <Link href="/tools/youtube-transcript-to-pdf" className="text-green-600 underline">
             PDF
           </Link>
           .

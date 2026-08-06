@@ -77,7 +77,7 @@ export default function MediaResultCard({
                   href={downloadHref(mediaUrl, filename)}
                   className="flex-1"
                 >
-                  <Button className="w-full bg-violet-600 text-white hover:bg-violet-700">
+                  <Button className="w-full bg-green-600 text-white hover:bg-green-700">
                     <Download className="mr-2 h-4 w-4" />
                     {item.is_video ? "Download Video" : "Download Image"}
                   </Button>

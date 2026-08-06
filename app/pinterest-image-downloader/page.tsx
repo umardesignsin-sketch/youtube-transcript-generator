@@ -101,11 +101,11 @@ export default function PinterestImageDownloaderPage() {
       <section className="bg-slate-50 pb-24">
         <div className="mx-auto max-w-4xl px-6 text-center text-sm text-slate-500">
           Looking for a video pin instead? Try the{" "}
-          <Link href="/pinterest-video-downloader" className="text-violet-600 underline">
+          <Link href="/pinterest-video-downloader" className="text-green-600 underline">
             Pinterest Video Downloader
           </Link>
           , or see everything this tool supports on the{" "}
-          <Link href="/pinterest-downloader" className="text-violet-600 underline">
+          <Link href="/pinterest-downloader" className="text-green-600 underline">
             main Pinterest Downloader
           </Link>{" "}
           page.

@@ -118,7 +118,7 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-2xl font-bold text-slate-900">Contact</h2>
               <p className="mt-3">
                 Questions about this policy? Reach us at{" "}
-                <a href="mailto:support@savefromnet.fun" className="text-violet-600 underline">
+                <a href="mailto:support@savefromnet.fun" className="text-green-600 underline">
                   support@savefromnet.fun
                 </a>
                 .

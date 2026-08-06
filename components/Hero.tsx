@@ -18,15 +18,15 @@ export default function Hero() {
       <div className="absolute inset-0 -z-10 grid-texture" />
 
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-violet-500/15 blur-[140px]" />
-        <div className="absolute right-0 top-24 h-[450px] w-[450px] rounded-full bg-cyan-400/15 blur-[120px]" />
-        <div className="absolute left-0 bottom-0 h-[450px] w-[450px] rounded-full bg-blue-400/10 blur-[120px]" />
+        <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-green-500/15 blur-[140px]" />
+        <div className="absolute right-0 top-24 h-[450px] w-[450px] rounded-full bg-emerald-400/15 blur-[120px]" />
+        <div className="absolute left-0 bottom-0 h-[450px] w-[450px] rounded-full bg-lime-400/10 blur-[120px]" />
       </div>
 
       <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
         <div className="mx-auto max-w-4xl text-center">
           <FadeIn>
-            <span className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-medium text-violet-700 shadow-md shadow-slate-200/50">
+            <span className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-medium text-green-700 shadow-md shadow-slate-200/50">
               🚀 Free · No Login · Unlimited Transcripts
             </span>
           </FadeIn>
@@ -35,7 +35,7 @@ export default function Hero() {
             <h1 className="mt-8 text-5xl font-extrabold tracking-tight leading-[1.05] text-slate-900 md:text-6xl">
               Free
               <br />
-              <span className="bg-gradient-to-r from-violet-600 via-indigo-600 to-sky-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-green-600 via-emerald-600 to-lime-500 bg-clip-text text-transparent">
                 YouTube Transcript Generator
               </span>
             </h1>
@@ -46,7 +46,7 @@ export default function Hero() {
               Convert{" "}
               <Link
                 href="/youtube-to-transcript"
-                className="font-medium text-violet-600 underline decoration-violet-300 underline-offset-2 hover:text-violet-700"
+                className="font-medium text-green-600 underline decoration-green-300 underline-offset-2 hover:text-green-700"
               >
                 YouTube to transcript
               </Link>{" "}
@@ -70,7 +70,7 @@ export default function Hero() {
                   key={chip.label}
                   className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm shadow-slate-200/60 ring-1 ring-slate-100"
                 >
-                  <chip.icon className="h-4 w-4 text-violet-600" />
+                  <chip.icon className="h-4 w-4 text-green-600" />
                   {chip.label}
                 </span>
               ))}

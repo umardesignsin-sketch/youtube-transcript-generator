@@ -74,12 +74,12 @@ export default function AboutPage() {
           <div className="mt-10 space-y-5 text-lg leading-8 text-slate-600">
             <p>
               It started with one tool: a{" "}
-              <Link href="/youtube-to-transcript" className="text-violet-600 underline">
+              <Link href="/youtube-to-transcript" className="text-green-600 underline">
                 YouTube transcript generator
               </Link>{" "}
               for turning any public video into clean, searchable text. Since
               then it's grown to cover{" "}
-              <Link href="/downloaders" className="text-violet-600 underline">
+              <Link href="/downloaders" className="text-green-600 underline">
                 Pinterest video and image downloading
               </Link>{" "}
               too — the shared idea behind all of it is the same: get you the
@@ -95,14 +95,14 @@ export default function AboutPage() {
 
             <ul className="mt-5 space-y-3 text-slate-600">
               <li>
-                <Link href="/youtube-to-transcript" className="font-medium text-violet-600 underline">
+                <Link href="/youtube-to-transcript" className="font-medium text-green-600 underline">
                   YouTube to Transcript
                 </Link>{" "}
                 — generate, copy and download transcripts from any public
                 YouTube video.
               </li>
               <li>
-                <Link href="/pinterest-downloader" className="font-medium text-violet-600 underline">
+                <Link href="/pinterest-downloader" className="font-medium text-green-600 underline">
                   Pinterest Downloader
                 </Link>{" "}
                 — download Pinterest videos, Idea Pins, and images in full

@@ -30,7 +30,7 @@ export default function ContactPage() {
           <div className="mt-10 rounded-3xl border border-slate-200 bg-slate-50 p-8">
             <a
               href="mailto:support@savefromnet.fun"
-              className="inline-flex items-center gap-3 text-xl font-semibold text-violet-600 hover:text-violet-700"
+              className="inline-flex items-center gap-3 text-xl font-semibold text-green-600 hover:text-green-700"
             >
               <Mail className="h-6 w-6" />
               support@savefromnet.fun

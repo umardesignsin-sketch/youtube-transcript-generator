@@ -34,7 +34,7 @@ export default function CookieConsent({ gaId }: { gaId: string }) {
             <p className="text-sm leading-6 text-zinc-300">
               We use cookies for basic usage analytics. No personal profile,
               no ads. See our{" "}
-              <Link href="/privacy-policy" className="text-violet-400 underline hover:text-violet-300">
+              <Link href="/privacy-policy" className="text-green-400 underline hover:text-green-300">
                 Privacy Policy
               </Link>{" "}
               for details.
@@ -50,7 +50,7 @@ export default function CookieConsent({ gaId }: { gaId: string }) {
               </Button>
               <Button
                 onClick={() => choose("accepted")}
-                className="bg-violet-600 text-white hover:bg-violet-700"
+                className="bg-green-600 text-white hover:bg-green-700"
               >
                 Accept
               </Button>

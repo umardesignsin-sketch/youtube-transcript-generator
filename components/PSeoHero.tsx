@@ -18,7 +18,7 @@ export default function PSeoHero({
       <div className="absolute inset-0 -z-10 grid-texture" />
 
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-violet-500/15 blur-[140px]" />
+        <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-green-500/15 blur-[140px]" />
         <div className="absolute right-0 top-20 h-[450px] w-[450px] rounded-full bg-cyan-400/15 blur-[120px]" />
         <div className="absolute left-0 bottom-0 h-[450px] w-[450px] rounded-full bg-blue-400/10 blur-[120px]" />
       </div>
@@ -26,7 +26,7 @@ export default function PSeoHero({
       <div className="mx-auto max-w-7xl px-6 py-20">
         <div className="mx-auto max-w-4xl text-center">
           <FadeIn>
-            <span className="inline-flex items-center rounded-full border border-violet-200 bg-violet-50 px-5 py-2 text-sm font-medium text-violet-700">
+            <span className="inline-flex items-center rounded-full border border-green-200 bg-green-50 px-5 py-2 text-sm font-medium text-green-700">
               {badge}
             </span>
           </FadeIn>

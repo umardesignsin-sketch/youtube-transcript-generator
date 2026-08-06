@@ -72,7 +72,7 @@ export default async function BlogPostPage({
 
       <article className="bg-white py-20">
         <div className="mx-auto max-w-3xl px-6">
-          <p className="text-sm font-medium text-violet-600">
+          <p className="text-sm font-medium text-green-600">
             {new Date(meta.date).toLocaleDateString("en-US", {
               year: "numeric",
               month: "long",

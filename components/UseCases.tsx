@@ -10,7 +10,7 @@ import FadeIn from "./FadeIn";
 
 const useCases = [
   {
-    icon: <GraduationCap className="h-8 w-8 text-violet-600" />,
+    icon: <GraduationCap className="h-8 w-8 text-green-600" />,
     title: "Students",
     description:
       "Take notes faster from lectures, tutorials and educational videos without watching them repeatedly.",
@@ -52,7 +52,7 @@ export default function UseCases() {
     <section className="bg-slate-50 py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
-          <span className="rounded-full bg-violet-100 px-4 py-2 text-sm font-medium text-violet-700">
+          <span className="rounded-full bg-green-100 px-4 py-2 text-sm font-medium text-green-700">
             Use Cases
           </span>
 

@@ -67,7 +67,7 @@ export default function TermsOfServicePage() {
                 how you use downloaded content. If you believe content
                 accessed through our tools infringes your copyright, contact
                 us at{" "}
-                <a href="mailto:support@savefromnet.fun" className="text-violet-600 underline">
+                <a href="mailto:support@savefromnet.fun" className="text-green-600 underline">
                   support@savefromnet.fun
                 </a>
                 .
@@ -113,7 +113,7 @@ export default function TermsOfServicePage() {
               <h2 className="text-2xl font-bold text-slate-900">Contact</h2>
               <p className="mt-3">
                 Questions about these terms? Reach us at{" "}
-                <a href="mailto:support@savefromnet.fun" className="text-violet-600 underline">
+                <a href="mailto:support@savefromnet.fun" className="text-green-600 underline">
                   support@savefromnet.fun
                 </a>
                 .

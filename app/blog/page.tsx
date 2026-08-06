@@ -37,7 +37,7 @@ export default async function BlogPage() {
                 href={`/blog/${post.slug}`}
                 className="group block rounded-3xl border border-slate-200 bg-slate-50 p-8 transition hover:-translate-y-1 hover:shadow-xl"
               >
-                <p className="text-sm font-medium text-violet-600">
+                <p className="text-sm font-medium text-green-600">
                   {new Date(post.date).toLocaleDateString("en-US", {
                     year: "numeric",
                     month: "long",
@@ -53,7 +53,7 @@ export default async function BlogPage() {
                   {post.description}
                 </p>
 
-                <span className="mt-5 inline-flex items-center gap-2 font-semibold text-violet-600">
+                <span className="mt-5 inline-flex items-center gap-2 font-semibold text-green-600">
                   Read post
                   <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
                 </span>

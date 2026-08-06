@@ -13,14 +13,18 @@ export default function AppleIcon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(135deg, #7c3aed 0%, #4f46e5 55%, #0ea5e9 100%)",
+          background: "linear-gradient(135deg, #22c55e 0%, #15803d 100%)",
         }}
       >
-        <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
-          <div style={{ width: 88, height: 16, borderRadius: 10, background: "#fff" }} />
-          <div style={{ width: 64, height: 16, borderRadius: 10, background: "#fff" }} />
-          <div style={{ width: 76, height: 16, borderRadius: 10, background: "#fff" }} />
-        </div>
+        <svg width="100" height="100" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M12 4v13M19 11l-7 7-7-7"
+            stroke="#fff"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
       </div>
     ),
     { ...size }

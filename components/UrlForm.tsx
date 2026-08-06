@@ -68,7 +68,7 @@ export default function UrlForm() {
               value={url}
               onChange={(e) => setUrl(e.target.value)}
               placeholder="Paste YouTube URL..."
-              className="h-16 rounded-2xl border-0 bg-slate-100 pl-14 text-slate-900 placeholder:text-slate-400 focus-visible:ring-2 focus-visible:ring-violet-500"
+              className="h-16 rounded-2xl border-0 bg-slate-100 pl-14 text-slate-900 placeholder:text-slate-400 focus-visible:ring-2 focus-visible:ring-green-500"
             />
 
           </div>
@@ -76,7 +76,7 @@ export default function UrlForm() {
           <Button
             onClick={handleSubmit}
             disabled={loading}
-            className="h-16 rounded-2xl bg-violet-600 px-10 text-white transition hover:bg-violet-700"
+            className="h-16 rounded-2xl bg-green-600 px-10 text-white transition hover:bg-green-700"
           >
 
             {loading ? (
