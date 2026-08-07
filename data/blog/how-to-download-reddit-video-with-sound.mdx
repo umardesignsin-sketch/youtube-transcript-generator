@@ -1,0 +1,43 @@
+export const meta = {
+  title: "How to Download a Reddit Video With Sound",
+  description:
+    "Reddit videos often download with no audio unless the downloader specifically merges the separate video and audio streams. Here's why, and how to get it right.",
+  date: "2026-08-07",
+};
+
+If you've ever downloaded a Reddit video and gotten a silent file back, you didn't do anything wrong — Reddit's own video hosting (`v.redd.it`) stores video and audio as two completely separate files, and a lot of simple "save video" methods only grab the video half.
+
+## Why Reddit Videos Lose Their Audio
+
+When Reddit hosts a video, the video track and audio track are served as independent DASH streams from `v.redd.it` — even the "download" option in some browser extensions and simple scrapers only follows the video URL, since that's the one that's obvious from the page source. The audio lives at a separate URL that isn't visible unless a tool specifically knows to look for it and merge the two.
+
+## How to Download a Reddit Video With Sound
+
+1. Copy the post's URL from the address bar or the Share button.
+2. Paste it into a [Reddit video downloader](/reddit-video-downloader) that merges audio automatically.
+3. Download — the video and audio arrive combined into a single file.
+
+No extra steps or settings needed on your end — the merge happens server-side before the file reaches you.
+
+## How to Tell If a Tool Handles This Correctly
+
+Test it on a Reddit post you know has sound (most video posts in subreddits like r/videos or r/PublicFreakout do). If the download plays silently, the tool only grabbed the video stream. A downloader built specifically to handle Reddit's split-stream format won't have this problem.
+
+## Common Issues
+
+**Some Reddit videos genuinely have no audio.** Not every video post includes sound in the first place — if the video was silent on Reddit's own player too, no downloader can add audio that was never there.
+
+**Private subreddits.** Only posts from public subreddits that don't require login can be downloaded — this is a platform access limit, not a tool limitation.
+
+## FAQ
+
+**Why does this only happen on Reddit and not other platforms?**
+Most platforms serve a single combined video+audio file for standard uploads. Reddit's DASH-based hosting is unusual in splitting them by default for all videos, not just high-resolution ones.
+
+**Does this affect video quality too?**
+No — quality and audio are separate issues. A tool can grab the right quality and still miss the audio if it doesn't merge streams.
+
+**Can I download Reddit videos from old.reddit.com links too?**
+Yes, both the modern and old Reddit URL formats point to the same underlying post data.
+
+Ready to try it? [Download a Reddit video with sound](/reddit-video-downloader) — free, no sign-up.

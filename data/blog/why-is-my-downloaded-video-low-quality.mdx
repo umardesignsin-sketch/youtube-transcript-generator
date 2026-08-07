@@ -1,0 +1,43 @@
+export const meta = {
+  title: "Why Is My Downloaded Video Low Quality?",
+  description:
+    "Downloaded a video and it looks worse than the original? Here's what actually causes quality loss, and how to check a tool's quality options are real before trusting them.",
+  date: "2026-08-07",
+};
+
+A downloaded video looking noticeably worse than what you watched in the browser is one of the most common complaints about video downloaders — and it's rarely the downloader "compressing" anything. Here's what's actually happening.
+
+## The Quality Option Didn't Actually Exist
+
+This is the most common cause. A lot of downloaders show a fixed list of qualities — 360p, 720p, 1080p — on every video, regardless of what that specific video was actually uploaded at. If you pick 1080p on a video that only has up to 480p available, the tool either fails silently and falls back to whatever it can get, or it upscales a lower-quality stream and passes it off as the resolution you asked for.
+
+**How to check:** A trustworthy downloader only lists qualities the video genuinely has — if you only see 480p and 360p options for a video, that's honest, not a limitation of the tool.
+
+## The Video Was Re-encoded
+
+Some tools re-encode every download through their own server rather than passing through the original file, either to save bandwidth or to standardize the output format. Re-encoding always loses some quality compared to the source, even at "high" settings — this is unavoidable with any lossy re-encode, not specific to any one tool.
+
+**How to check:** Compare file size against what you'd expect for the resolution and length — a re-encoded file is often noticeably smaller than a source-quality file of the same resolution.
+
+## The Source Video Itself Is Low Quality
+
+Sometimes the "low quality" is baked into the original upload — an older video, a re-upload of a re-upload, or a video the creator only ever published at 480p. No downloader can recover detail that was never in the source file.
+
+**How to check:** Watch the video at full resolution directly on the platform first — if it looks soft or blocky there too, the issue is the source, not the download.
+
+## What a Reliable Downloader Looks Like
+
+The common thread across the fixable causes: a tool that pulls real quality options directly from the video's own metadata, rather than showing a generic list, avoids both silent quality mismatches and unnecessary re-encoding. See our breakdown of [what to look for in a downloader](/best-youtube-video-downloader) for the full checklist.
+
+## FAQ
+
+**Can I upscale a low-quality download afterward?**
+Technically yes with dedicated upscaling software, but that's adding detail through interpolation, not recovering what was actually lost — results vary a lot.
+
+**Does downloading audio-only avoid quality loss?**
+Audio has the same issue in principle — a tool should show the actual available bitrate rather than a fixed number, though audio quality differences are usually less noticeable than video ones.
+
+**Is 1080p always available?**
+No — only if the original uploader published the video at that resolution or higher. A downloader can't create resolution the source never had.
+
+Ready to try a downloader with real quality options? [Download a YouTube video now](/youtube-video-downloader) — free, no sign-up.
