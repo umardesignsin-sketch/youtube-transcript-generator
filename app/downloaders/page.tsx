@@ -6,9 +6,9 @@ import Navbar from "@/components/Navbar";
 import CTA from "@/components/CTA";
 
 export const metadata: Metadata = {
-  title: "Free Downloaders — YouTube & Pinterest",
+  title: "Free Downloaders — YouTube, Pinterest, Facebook, Reddit & More",
   description:
-    "Free tools to download YouTube videos and Pinterest videos, Idea Pins and images. No sign-up, no watermark.",
+    "Free tools to download videos and images from YouTube, Pinterest, Facebook, Reddit and Dailymotion. No sign-up, no watermark.",
   alternates: { canonical: "/downloaders" },
 };
 
@@ -52,6 +52,21 @@ const downloaders = [
     href: "/pinterest-image-downloader",
     title: "Pinterest Image Downloader",
     description: "Save Pinterest images in full resolution, no watermark.",
+  },
+  {
+    href: "/facebook-video-downloader",
+    title: "Facebook Video Downloader",
+    description: "Download public Facebook videos and Reels as MP4, free.",
+  },
+  {
+    href: "/reddit-video-downloader",
+    title: "Reddit Video Downloader",
+    description: "Download Reddit videos as MP4 with audio merged in, free.",
+  },
+  {
+    href: "/dailymotion-downloader",
+    title: "Dailymotion Downloader",
+    description: "Download Dailymotion videos as MP4, up to 1080p, free.",
   },
 ];
 

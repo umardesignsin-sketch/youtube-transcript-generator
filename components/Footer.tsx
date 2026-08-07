@@ -16,6 +16,9 @@ const downloaders = [
   { href: "/pinterest-downloader", label: "Pinterest Downloader" },
   { href: "/pinterest-video-downloader", label: "Pinterest Video" },
   { href: "/pinterest-image-downloader", label: "Pinterest Image" },
+  { href: "/facebook-video-downloader", label: "Facebook Video" },
+  { href: "/reddit-video-downloader", label: "Reddit Video" },
+  { href: "/dailymotion-downloader", label: "Dailymotion" },
 ];
 
 export default function Footer() {
@@ -44,7 +47,7 @@ export default function Footer() {
 
           <FooterColumn
             title="Downloaders"
-            links={downloaders}
+            links={downloaders.slice(0, 6)}
             moreHref="/downloaders"
           />
 
