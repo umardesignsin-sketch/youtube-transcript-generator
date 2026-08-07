@@ -5,6 +5,12 @@ import { useCases } from "@/lib/data/use-cases";
 import { languages } from "@/lib/data/languages";
 import { tools } from "@/lib/data/tools";
 import { comparisons } from "@/lib/data/compare";
+import { homepageLocales, homepageLocaleCodes } from "@/lib/data/i18n/homepage";
+
+const siteLocales = homepageLocaleCodes.map((code) => ({
+  href: `/${code}`,
+  label: homepageLocales[code].name,
+}));
 
 const downloaders = [
   { href: "/youtube-video-downloader", label: "YouTube Video" },
@@ -88,7 +94,19 @@ export default function Footer() {
           />
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm md:flex-row">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 border-t border-white/10 pt-6 text-xs text-zinc-500">
+          <span>Also available in:</span>
+          {siteLocales.map((l, i) => (
+            <span key={l.href} className="flex items-center gap-2">
+              <Link href={l.href} className="hover:text-white">
+                {l.label}
+              </Link>
+              {i < siteLocales.length - 1 && <span className="text-zinc-700">·</span>}
+            </span>
+          ))}
+        </div>
+
+        <div className="mt-6 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm md:flex-row">
           <p>&copy; {new Date().getFullYear()} SaveFromNet. All rights reserved.</p>
 
           <div className="flex flex-wrap justify-center gap-6">

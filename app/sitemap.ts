@@ -5,14 +5,29 @@ import { languages } from "@/lib/data/languages";
 import { tools } from "@/lib/data/tools";
 import { comparisons } from "@/lib/data/compare";
 import { getPostSlugs } from "@/lib/blog";
+import { homepageLocaleCodes } from "@/lib/data/i18n/homepage";
 
 const baseUrl = "https://www.savefromnet.fun";
+
+const hreflangAlternates: Record<string, string> = {
+  "x-default": baseUrl,
+  en: baseUrl,
+};
+for (const code of homepageLocaleCodes) {
+  hreflangAlternates[code] = `${baseUrl}/${code}`;
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [
-    { url: baseUrl, lastModified: now, changeFrequency: "daily", priority: 1 },
+    {
+      url: baseUrl,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 1,
+      alternates: { languages: hreflangAlternates },
+    },
     {
       url: `${baseUrl}/youtube-to-transcript`,
       lastModified: now,
@@ -133,6 +148,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    ...homepageLocaleCodes.map((code) => ({
+      url: `${baseUrl}/${code}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+      alternates: { languages: hreflangAlternates },
+    })),
     {
       url: `${baseUrl}/about`,
       lastModified: now,
