@@ -39,6 +39,31 @@ const downloaders = [
     description: "A simpler, ad-light way to download YouTube video and audio.",
   },
   {
+    href: "/youtube-shorts-downloader",
+    title: "YouTube Shorts Downloader",
+    description: "Download YouTube Shorts as MP4 in HD, free.",
+  },
+  {
+    href: "/tubemate-alternative",
+    title: "TubeMate Alternative",
+    description: "Download YouTube video and audio in your browser — no APK needed.",
+  },
+  {
+    href: "/clipconverter-alternative",
+    title: "ClipConverter Alternative",
+    description: "A simpler, ad-light way to convert YouTube video and audio.",
+  },
+  {
+    href: "/clipgrab-alternative",
+    title: "ClipGrab Alternative",
+    description: "Download YouTube video and audio — no desktop app to install.",
+  },
+  {
+    href: "/allmytube-alternative",
+    title: "AllMyTube Alternative",
+    description: "Free YouTube downloading — no license or purchase needed.",
+  },
+  {
     href: "/pinterest-downloader",
     title: "Pinterest Downloader",
     description: "Download any Pinterest pin — video, Idea Pin, or image — in one tool.",

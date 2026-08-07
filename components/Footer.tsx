@@ -25,6 +25,11 @@ const downloaders = [
   { href: "/facebook-video-downloader", label: "Facebook Video" },
   { href: "/reddit-video-downloader", label: "Reddit Video" },
   { href: "/dailymotion-downloader", label: "Dailymotion" },
+  { href: "/youtube-shorts-downloader", label: "YouTube Shorts" },
+  { href: "/tubemate-alternative", label: "TubeMate Alternative" },
+  { href: "/clipconverter-alternative", label: "ClipConverter Alternative" },
+  { href: "/clipgrab-alternative", label: "ClipGrab Alternative" },
+  { href: "/allmytube-alternative", label: "AllMyTube Alternative" },
 ];
 
 export default function Footer() {
