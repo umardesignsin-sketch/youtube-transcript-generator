@@ -11,16 +11,57 @@ import CTA from "@/components/CTA";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "YouTube Video Downloader — Free, MP4, Multiple Qualities",
+  title: "YouTube Video Downloader — Free MP4 Download, Real Quality Options",
   description:
-    "Download any public YouTube video as MP4 in multiple qualities (up to 1080p, when available), or as MP3 audio — free, no sign-up.",
+    "Download any public YouTube video as MP4 up to 1080p, or extract MP3 audio — free, no sign-up, no fake quality options. See exactly what's downloadable before you click.",
   alternates: { canonical: "/youtube-video-downloader" },
   openGraph: {
-    title: "YouTube Video Downloader — Free, Multiple Qualities",
+    title: "YouTube Video Downloader — Free, Real Quality Options",
     description: "Paste a YouTube link and download the video as MP4 or MP3.",
     url: "https://www.savefromnet.fun/youtube-video-downloader",
     type: "website",
   },
+};
+
+const lastUpdated = "August 2026";
+
+const howToSteps = [
+  {
+    name: "Copy the video's URL",
+    text: "Copy the YouTube video's link from the address bar or the Share button — works for regular videos and Shorts.",
+  },
+  {
+    name: "Paste it and click Get Video",
+    text: "Paste the URL into the box above and click Get Video. The tool reads the video's actual available formats directly from YouTube.",
+  },
+  {
+    name: "Pick a quality and download",
+    text: "Choose a resolution (or Audio for MP3) from the buttons shown — only qualities that genuinely exist for that video are listed.",
+  },
+];
+
+const howToJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Download a YouTube Video",
+  description:
+    "Download any public YouTube video as an MP4 file in the quality of your choice, or extract the audio as MP3.",
+  step: howToSteps.map((step, index) => ({
+    "@type": "HowToStep",
+    position: index + 1,
+    name: step.name,
+    text: step.text,
+  })),
+};
+
+const softwareAppJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "YouTube Video Downloader",
+  applicationCategory: "UtilityApplication",
+  operatingSystem: "Web",
+  url: "https://www.savefromnet.fun/youtube-video-downloader",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
 };
 
 const faqs = [
@@ -74,6 +115,8 @@ export default function YouTubeVideoDownloaderPage() {
       <Navbar />
 
       <JsonLd data={breadcrumbJsonLd} />
+      <JsonLd data={howToJsonLd} />
+      <JsonLd data={softwareAppJsonLd} />
 
       <PSeoHero
         badge="Free · No Sign-Up · MP4"
@@ -82,6 +125,10 @@ export default function YouTubeVideoDownloaderPage() {
       >
         <YouTubeVideoForm />
       </PSeoHero>
+
+      <div className="bg-white text-center text-xs text-slate-400">
+        Last updated {lastUpdated}
+      </div>
 
       <ContentBlock
         heading="How to Download a YouTube Video"
@@ -93,6 +140,15 @@ export default function YouTubeVideoDownloaderPage() {
           "Copy the video's URL from the address bar or the Share button.",
           "Paste it above and click Get Video.",
           "Pick a quality (or Audio for MP3) to download it.",
+        ]}
+      />
+
+      <ContentBlock
+        heading="How This Downloader Actually Works"
+        paragraphs={[
+          "YouTube doesn't serve one single video file — for most resolutions above 480p, the video track and audio track are separate streams (this is called adaptive bitrate streaming, the same technique YouTube's own player uses to adjust quality as your connection changes). A downloader that just grabs \"the video\" without accounting for this either fails on higher resolutions or hands you a silent file.",
+          "When you paste a link here, the tool reads the video's real format list directly from YouTube — every resolution that actually exists for that specific upload, not a generic fixed menu. If the resolution you pick needs its audio merged in separately (true for 720p and above on most videos), that merge happens automatically before the file reaches you, using ffmpeg on the server side. That's why the quality buttons you see are never a guess — they're pulled from the video itself.",
+          "For audio-only downloads, the tool deliberately picks a standard ~128kbps audio stream rather than the highest-bitrate one available. Testing showed YouTube's highest-bitrate audio formats are frequently gated behind checks that fail for third-party access — the standard-bitrate stream is the one that's reliably accessible.",
         ]}
       />
 
