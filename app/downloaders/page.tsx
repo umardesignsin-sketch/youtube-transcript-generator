@@ -29,6 +29,16 @@ const downloaders = [
     description: "Download just the audio from a YouTube video as MP3, free.",
   },
   {
+    href: "/youtube-to-mp3",
+    title: "YouTube to MP3",
+    description: "Convert any public YouTube video to MP3 audio, free.",
+  },
+  {
+    href: "/y2mate-alternative",
+    title: "Y2mate Alternative",
+    description: "A simpler, ad-light way to download YouTube video and audio.",
+  },
+  {
     href: "/pinterest-downloader",
     title: "Pinterest Downloader",
     description: "Download any Pinterest pin — video, Idea Pin, or image — in one tool.",
