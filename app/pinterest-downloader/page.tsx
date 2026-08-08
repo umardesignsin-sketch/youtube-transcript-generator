@@ -11,7 +11,7 @@ import CTA from "@/components/CTA";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Pinterest Downloader — Videos & Images, Free, No Watermark",
+  title: "Pinterest Downloader — Videos & Images, Free",
   description:
     "Download anything from Pinterest — videos, idea pins, and images — in one paste-a-link step. Free, no sign-up, no watermark, full quality.",
   alternates: { canonical: "/pinterest-downloader" },

@@ -5,13 +5,27 @@ import HowItWorks from "@/components/HowItWorks";
 import ContentBlock from "@/components/ContentBlock";
 import Citations from "@/components/Citations";
 import FAQ from "@/components/FAQ";
+import JsonLd from "@/components/JsonLd";
 
 const lastUpdated = "August 2026";
+
+const softwareAppJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "YouTube Transcript Generator",
+  applicationCategory: "UtilityApplication",
+  operatingSystem: "Web",
+  url: "https://www.savefromnet.fun",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+};
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
       <Navbar />
+
+      <JsonLd data={softwareAppJsonLd} />
+
       <Hero />
 
       <div className="bg-white text-center text-xs text-slate-400">

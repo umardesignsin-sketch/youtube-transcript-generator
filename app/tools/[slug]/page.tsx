@@ -55,6 +55,7 @@ export default async function ToolPage({
     step: tool.steps.map((step, index) => ({
       "@type": "HowToStep",
       position: index + 1,
+      name: `Step ${index + 1}`,
       text: step,
     })),
   };

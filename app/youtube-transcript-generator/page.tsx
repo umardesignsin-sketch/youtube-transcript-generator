@@ -11,7 +11,7 @@ import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 
 export const metadata: Metadata = {
-  title: "Free YouTube Transcript Generator | Generate & Download Transcripts",
+  title: "YouTube Transcript Generator — Free & Instant",
   description:
     "Generate accurate YouTube transcripts instantly. Copy, search and download transcripts from any public YouTube video for free. No login required.",
   alternates: {

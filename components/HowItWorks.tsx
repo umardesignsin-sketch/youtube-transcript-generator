@@ -2,34 +2,57 @@ import { Link2, FileText, Download } from "lucide-react";
 import JsonLd from "./JsonLd";
 import FadeIn from "./FadeIn";
 
-const steps = [
+export type StepItem = { title: string; description: string };
+
+const icons = [
+  <Link2 key="link" className="h-10 w-10 text-green-600" />,
+  <FileText key="filetext" className="h-10 w-10 text-blue-600" />,
+  <Download key="download" className="h-10 w-10 text-green-600" />,
+];
+
+const defaultSteps: StepItem[] = [
   {
-    icon: <Link2 className="h-10 w-10 text-green-600" />,
     title: "Paste Your YouTube Video URL",
     description:
       "Copy the URL of any public YouTube video and paste it into our free YouTube Transcript Generator.",
   },
   {
-    icon: <FileText className="h-10 w-10 text-blue-600" />,
     title: "Generate the Transcript",
     description:
       "Our tool instantly extracts the transcript, captions and video information, making it easy to read, search and copy.",
   },
   {
-    icon: <Download className="h-10 w-10 text-green-600" />,
     title: "Copy or Download",
     description:
       "Copy the transcript or download it as a TXT file for studying, SEO, AI prompts, research, documentation or content creation.",
   },
 ];
 
-export default function HowItWorks() {
+export default function HowItWorks({
+  label = "How It Works",
+  heading = "Generate a YouTube Transcript in 3 Simple Steps",
+  subheading = "Paste a YouTube video link, generate the transcript instantly and copy or download it for free. No registration or software installation required.",
+  items = defaultSteps,
+  jsonLdName = "How to Generate a YouTube Transcript",
+  jsonLdDescription = "Paste a YouTube video link, generate the transcript instantly and copy or download it for free.",
+  inLanguage,
+}: {
+  label?: string;
+  heading?: string;
+  subheading?: string;
+  items?: StepItem[];
+  jsonLdName?: string;
+  jsonLdDescription?: string;
+  inLanguage?: string;
+} = {}) {
+  const steps = items.map((item, i) => ({ ...item, icon: icons[i] }));
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    name: "How to Generate a YouTube Transcript",
-    description:
-      "Paste a YouTube video link, generate the transcript instantly and copy or download it for free.",
+    name: jsonLdName,
+    description: jsonLdDescription,
+    ...(inLanguage ? { inLanguage } : {}),
     step: steps.map((step, index) => ({
       "@type": "HowToStep",
       position: index + 1,
@@ -45,17 +68,15 @@ export default function HowItWorks() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
           <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">
-            How It Works
+            {label}
           </span>
 
           <h2 className="mt-6 text-5xl font-bold text-slate-900">
-            Generate a YouTube Transcript in 3 Simple Steps
+            {heading}
           </h2>
 
           <p className="mx-auto mt-5 max-w-3xl text-lg text-slate-600">
-            Paste a YouTube video link, generate the transcript instantly and
-            copy or download it for free. No registration or software
-            installation required.
+            {subheading}
           </p>
         </div>
 

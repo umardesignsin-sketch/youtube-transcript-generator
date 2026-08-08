@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import CTA from "@/components/CTA";
 
 export const metadata: Metadata = {
-  title: "Free Downloaders — YouTube, Pinterest, Facebook, Reddit & More",
+  title: "Free Downloaders — YouTube, Pinterest & More",
   description:
     "Free tools to download videos and images from YouTube, Pinterest, Facebook, Reddit and Dailymotion. No sign-up, no watermark.",
   alternates: { canonical: "/downloaders" },

@@ -53,11 +53,24 @@ export default async function LocalizedHomePage({
   if (!locale) return notFound();
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white">
+    <main className="min-h-screen bg-zinc-950 text-white" lang={locale.htmlLang}>
       <Navbar />
       <LocalizedHero locale={locale} />
-      <Features />
-      <HowItWorks />
+      <Features
+        label={locale.featuresLabel}
+        heading={locale.featuresHeading}
+        subheading={locale.featuresSubheading}
+        items={locale.features}
+      />
+      <HowItWorks
+        label={locale.howItWorksLabel}
+        heading={locale.howItWorksHeading}
+        subheading={locale.howItWorksSubheading}
+        items={locale.howItWorksSteps}
+        jsonLdName={locale.howToName}
+        jsonLdDescription={locale.howToDescription}
+        inLanguage={locale.htmlLang}
+      />
       <Citations />
       <FAQ faqs={locale.faqs} title={locale.faqTitle} description={locale.faqDescription} />
     </main>

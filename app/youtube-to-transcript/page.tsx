@@ -12,7 +12,7 @@ import JsonLd from "@/components/JsonLd";
 import Citations from "@/components/Citations";
 
 export const metadata: Metadata = {
-  title: "YouTube to Transcript — Free Converter, Accurate Text in Seconds",
+  title: "YouTube to Transcript — Free, Accurate Converter",
   description:
     "Turn any YouTube video into a transcript in seconds. Paste the link, get clean, accurate text back instantly — free, no software, no sign-up required.",
   alternates: { canonical: "/youtube-to-transcript" },

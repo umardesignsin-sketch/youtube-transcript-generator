@@ -11,7 +11,7 @@ import CTA from "@/components/CTA";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "YouTube Video Downloader — Free MP4 Download, Real Quality Options",
+  title: "YouTube Video Downloader — Free MP4 Download",
   description:
     "Download any public YouTube video as MP4 up to 1080p, or extract MP3 audio — free, no sign-up, no fake quality options. See exactly what's downloadable before you click.",
   alternates: { canonical: "/youtube-video-downloader" },

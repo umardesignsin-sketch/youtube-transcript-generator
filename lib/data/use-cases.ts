@@ -239,7 +239,7 @@ export const useCases: UseCase[] = [
   {
     slug: "developers",
     audience: "Developers & AI Builders",
-    metaTitle: "YouTube Transcript Generator for Developers & AI Builders",
+    metaTitle: "YouTube Transcript Generator for Developers",
     metaDescription:
       "Get clean YouTube transcript text and timestamps for RAG pipelines, AI summarization, prompts and dataset building.",
     heading: "YouTube Transcripts for Developers & AI Builders",

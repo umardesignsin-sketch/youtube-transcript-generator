@@ -54,14 +54,29 @@ export default async function BlogPostPage({
 
   const Content = post.default;
   const { meta } = post;
+  const url = `https://www.savefromnet.fun/blog/${slug}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: meta.title,
     description: meta.description,
+    image: "https://www.savefromnet.fun/opengraph-image",
     datePublished: meta.date,
+    dateModified: meta.date,
     author: { "@type": "Organization", name: "SaveFromNet" },
+    publisher: {
+      "@type": "Organization",
+      name: "SaveFromNet",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.savefromnet.fun/apple-icon.png",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
   };
 
   return (

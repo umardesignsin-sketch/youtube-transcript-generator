@@ -15,7 +15,7 @@ export const comparisons: ComparePage[] = [
   {
     slug: "tactiq",
     competitor: "Tactiq",
-    metaTitle: "SaveFromNet vs Tactiq — Free YouTube Transcript Alternative",
+    metaTitle: "SaveFromNet vs Tactiq — Free Alternative",
     metaDescription:
       "Comparing SaveFromNet and Tactiq for generating YouTube transcripts. See the difference in setup, pricing model and export formats.",
     heading: "SaveFromNet vs Tactiq",
@@ -43,7 +43,7 @@ export const comparisons: ComparePage[] = [
   {
     slug: "notegpt",
     competitor: "NoteGPT",
-    metaTitle: "SaveFromNet vs NoteGPT — Free YouTube Transcript Alternative",
+    metaTitle: "SaveFromNet vs NoteGPT — Free Alternative",
     metaDescription:
       "Comparing SaveFromNet and NoteGPT for extracting YouTube transcripts. See the difference in pricing, sign-up and simplicity.",
     heading: "SaveFromNet vs NoteGPT",
@@ -71,7 +71,7 @@ export const comparisons: ComparePage[] = [
   {
     slug: "downsub",
     competitor: "DownSub",
-    metaTitle: "SaveFromNet vs DownSub — Free YouTube Transcript Alternative",
+    metaTitle: "SaveFromNet vs DownSub — Free Alternative",
     metaDescription:
       "Comparing SaveFromNet and DownSub for downloading YouTube subtitles and transcripts, including formats and interface.",
     heading: "SaveFromNet vs DownSub",
@@ -99,7 +99,7 @@ export const comparisons: ComparePage[] = [
   {
     slug: "youtubetotranscript",
     competitor: "YouTubeToTranscript.com",
-    metaTitle: "SaveFromNet vs YouTubeToTranscript.com — Free Alternative",
+    metaTitle: "SaveFromNet vs YouTubeToTranscript.com",
     metaDescription:
       "Comparing SaveFromNet and YouTubeToTranscript.com for generating free YouTube video transcripts, formats and features.",
     heading: "SaveFromNet vs YouTubeToTranscript.com",
@@ -127,7 +127,7 @@ export const comparisons: ComparePage[] = [
   {
     slug: "y2mate",
     competitor: "Y2mate",
-    metaTitle: "SaveFromNet vs Y2mate — Free YouTube Downloader Alternative",
+    metaTitle: "SaveFromNet vs Y2mate — Free Alternative",
     metaDescription:
       "Comparing SaveFromNet and Y2mate for downloading YouTube videos and audio. See the difference in ads, redirects and quality options.",
     heading: "SaveFromNet vs Y2mate",

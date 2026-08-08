@@ -24,18 +24,6 @@ export default function StructuredData() {
           "target": "https://www.savefromnet.fun/?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "YouTube Transcript Generator",
-        "applicationCategory": "UtilityApplication",
-        "operatingSystem": "Web",
-        "url": "https://www.savefromnet.fun",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        }
       }
     ]
   };
